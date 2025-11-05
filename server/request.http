@@ -1,0 +1,50 @@
+#### API ENDPOINTS
+
+####  test health
+GET http://localhost:4000/api/health
+
+
+### login 
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+User-Agent: "res-client"
+
+{
+    "email": "alhdrin1@gmail.com",
+    "password": "alhdrin"
+}
+
+
+### register 
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+User-Agent: "res-client"
+
+{
+    "name": "Alhdrin Gungon",
+    "email": "alhdrin1@gmail.com",
+    "password": "alhdrin"
+}
+
+
+### change profile 
+PUT http://localhost:4000/api/auth/profile
+Content-Type: application/json
+User-Agent: "res-client"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhbGhkcmluMUBnbWFpbC5jb20iLCJpYXQiOjE3NjIzNTkzNjgsImV4cCI6MTc2MjM2Mjk2OH0.FKcF6AyFHS83c1oG8VxtaQmltPSKYatubWUmEE87WIg
+
+{
+
+    "name": "John Doe",
+     "email": "johndoe@gmail.com"
+}
+
+
+
+
+### register 
+GET http://localhost:4000/api/auth/me
+Content-Type: application/json
+User-Agent: "res-client"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhbGhkcmluMUBnbWFpbC5jb20iLCJpYXQiOjE3NjIzNTY0MTQsImV4cCI6MTc2MjM2MDAxNH0.6IkvBpkDNA6yfCokuk6raok-AkoJt0JAysbGC32ODrs
+
